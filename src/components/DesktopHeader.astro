@@ -1,0 +1,30 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import BurgerIcon from "../icons/burgerIcon.astro";
+import HeaderContactLink from "./HeaderContactLink.astro";
+import HeaderHomeLink from "./HeaderHomeLink.astro";
+---
+
+<nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+  <div class="flex lg:flex-1">
+   <HeaderHomeLink />
+  </div>
+  <div class="flex lg:hidden">
+    <button
+      id="open-menu-button"
+      type="button"
+      class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+    >
+      <span class="sr-only">Abrir menu principal</span>
+      <BurgerIcon/>
+    </button>
+  </div>
+  <div class="hidden lg:flex lg:gap-x-12">
+    <HeaderLink href="/#soluciones" text="Soluciones" />
+    <HeaderLink href="/#proyectos" text="Proyectos" />
+    <HeaderLink href="/#nosotros" text="Nosotros" />
+  </div>
+  <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+    <HeaderContactLink />
+  </div>
+</nav>

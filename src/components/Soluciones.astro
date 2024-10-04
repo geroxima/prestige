@@ -1,0 +1,71 @@
+---
+import GradualSpacingTitle from "./GradualSpacingTitle.astro";
+import MagicWandIcon from "@/icons/MagicWandIcon.astro";
+import GlobeIcon from "@/icons/GlobeIcon.astro";
+import AsterikIcon from "@/icons/AsterikIcon.astro";
+import CardsIcon from "@/icons/CardsIcon.astro";
+import ShirtSportIcon from "@/icons/ShirtSportIcon.astro";
+
+const cardData = [
+  {
+    title: "Diseño Gráfico",
+    text: "Diseños atractivos que comunican eficazmente.",
+    icon: MagicWandIcon,
+  },
+  {
+    title: "Diseño Web",
+    text: "Sitios web personalizados que mejoran tu presencia en línea.",
+    icon: GlobeIcon,
+  },
+  {
+    title: "Cartelería",
+    text: "Carteles y señalización que destacan tu marca.",
+    icon: AsterikIcon,
+  },
+  {
+    title: "Prendas Deportivas",
+    text: "Ropa y accesorios deportivos de calidad.",
+    icon: ShirtSportIcon,
+  },
+  {
+    title: "Tarjetería",
+    text: "Tarjetas de presentación que dejan huella.",
+    icon: CardsIcon,
+  },
+];
+---
+
+<section class="xl:h-screen scroll-mt-24 px-6 z-10 mb-24" id="soluciones">
+    <GradualSpacingTitle text="Soluciones" />
+    <section>
+      <div class="relative pt-2 mx-auto md:px-12 lg:px-24 max-w-7xl">
+        <div class="max-w-xl">
+          <h1 class="mt-12 text-3xl xl:text-4xl font-semibold tracking-tight text-base-900 sm:text-balance">
+            Potencia tu negocio con nuestras soluciones a medida
+          </h1>
+          <p class="mt-6 text-base font-medium text-base-500 sm:text-pretty">
+            Proporcionamos herramientas innovadoras para impulsar el crecimiento y la eficiencia de tu empresa.
+          </p>
+        </div>
+  
+        <!-- Grid responsive de 3 columnas -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+          {cardData.map((card) => {
+            const IconComponent = card.icon; // Icono dinámico
+  
+            return (
+              <div class="relative py-10 px-6 rounded-xl border border-gray-200 bg-neutral-100 dark:bg-neutral-900">
+                {/* Icono en la esquina superior derecha */}
+                <div class="absolute top-4 right-4">
+                  <IconComponent />
+                </div>  
+                <h3 class="text-xl font-bold tracking-tight">{card.title}</h3>
+                <p class="mt-2 text-base">{card.text}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  </section>
+  

@@ -1,0 +1,12 @@
+---
+const { title, gradientClasses, href } = Astro.props;
+---
+
+<div class="flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 group bg-gray-500">
+  <a href={href} class="relative flex flex-col flex-grow">
+    <div class={`absolute inset-0 `}></div>
+    <h3 class="z-10 text-2xl font-medium text-zinc-900 absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+      {title}
+    </h3>
+  </a>
+</div>

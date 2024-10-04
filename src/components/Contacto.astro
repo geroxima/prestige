@@ -1,0 +1,30 @@
+---
+import WhatsAppIcon from "@/icons/WhatsAppIcon.astro";
+import PhoneIcon from "@/icons/PhoneIcon.astro";
+import MailIcon from "@/icons/MailIcon.astro";
+import ContactCard from "./ContactCard.astro";
+import GradualSpacingTitle from "./GradualSpacingTitle.astro";
+---
+
+<section class="scroll-mt-24" id="contacto">
+  <GradualSpacingTitle text="Contacto"/>
+  <div class="px-8 py-32 mx-auto md:px-12 lg:px-24 max-w-7xl relative">
+    <div class="max-w-xl lg:text-balance mx-auto text-center">
+      <h1
+        class="text-4xl mt-4 font-semibold tracking-tight text-base-900 sm:text-balance"
+      >
+        Nos encantaría saber de ti
+      </h1>
+      <p class="mt-6 text-base font-medium text-base-500 sm:text-balance">
+        Déjanos saber lo que tienes en mente y te responderemos lo antes
+        posible.
+      </p>
+    </div>
+    <dl
+      class="grid text-center mt-12 sm:grid-cols-1 gap-x-6 gap-y-12 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16"
+    >
+      <ContactCard/>
+      
+    </dl>
+  </div>
+</section>

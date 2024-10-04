@@ -1,0 +1,47 @@
+---
+import WhatsAppIcon from "@/icons/WhatsAppIcon.astro";
+import PhoneIcon from "@/icons/PhoneIcon.astro";
+import MailIcon from "@/icons/MailIcon.astro";
+import ArrowRight from "@/icons/ArrowRight.astro";
+import { Phone } from "lucide-react";
+---
+
+<div class="flex h-full flex-col text-sm bg-green-200 text-green-950 py-6 rounded-lg border transition-all ease-in-out duration-300 hover:border-green-950 justify-between items-center">
+    <dt class="flex flex-col gap-2 tracking-tighter text-xs items-center">
+        <WhatsAppIcon/>
+      <a
+        href="https://wa.me/595992323769?text=Hola%20Prestige%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n
+" target="_blank" rel="noopener noreferrer"
+        class="tracking-tight text-lg font-medium text-base-900 flex items-center hover:underline gap-x-2"
+      >
+        WhatsApp
+        <ArrowRight/>
+      </a>
+    </dt>
+</div>
+<div class="flex h-full flex-col text-sm bg-indigo-100 text-indigo-900 py-6 rounded-lg border transition-all ease-in-out duration-300 hover:border-indigo-900 justify-between items-center">
+    <dt class="flex flex-col gap-2 tracking-tighter text-xs items-center">
+        <PhoneIcon/>
+      <a
+        href="tel:+595992323769"
+        class="tracking-tight text-lg font-medium text-base-900 flex items-center hover:underline gap-x-2"
+        target="_blank" rel="noopener noreferrer"
+      >
+        +595 992 323769
+        <ArrowRight/>
+      </a>
+    </dt>
+</div>
+<div class="flex h-full flex-col text-sm bg-pink-100 text-pink-900 py-6 rounded-lg border transition-all ease-in-out duration-300 hover:border-pink-900 justify-between items-center">
+    <dt class="flex flex-col gap-2 tracking-tighter text-xs items-center">
+        <MailIcon/>
+      <a
+        href="mailto:hola@prestige.com.py" target="_blank" rel="noopener noreferrer"
+        class="tracking-tight text-lg font-medium text-base-900 flex items-center hover:underline gap-x-2"
+      >
+        hola@prestige.com.py
+        <ArrowRight/>
+      </a>
+    </dt>
+</div>
+

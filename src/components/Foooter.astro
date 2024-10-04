@@ -1,0 +1,62 @@
+---
+import { Image } from "astro:assets"
+import prestigeLogo from "../../public/prestige-logo.svg";
+---
+
+<footer class="bg-zinc-100">
+  <div class="px-8 py-6 lg:py-8">
+    <div class="md:flex md:justify-between">
+      <div class="mb-6 md:mb-0">
+        <a href="/" class="flex items-center">
+          <Image src={prestigeLogo} alt="Logo de Prestige" class="size-32" />
+        </a>
+      </div>
+      <div class="grid grid-cols-2 gap-8  xl:grid-cols-4">
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+            Accesos rápidos
+          </h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <li class="mb-4"><a href="#soluciones" class="hover:underline">Soluciones</a></li>
+            <li class="mb-4"><a href="#proyectos" class="hover:underline">Proyectos</a></li>
+            <li class="mb-4"><a href="#nosotros" class="hover:underline">Nosotros</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+            Horarios
+          </h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <li class="mb-4">Lunes a Viernes: <time>8:00</time> - <time>18:00</time></li>
+            <li>Sábado: <time>8:00</time> - <time>12:00</time></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+            Redes Sociales
+          </h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <li class="mb-4"><a href="#" class="hover:underline">Instagram</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+            Contacto
+          </h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <li class="mb-4"><a href="https://wa.me/595992323769?text=Hola%20Prestige%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n" class="hover:underline">WhatsApp</a></li>
+            <li class="mb-4"><a href="tel:+595992323769" class="hover:underline">+595 992 323769</a></li>
+            <li><a href="mailto:hola@prestige.com.py" class="hover:underline">hola@prestige.com.py</a></li>
+          </ul>
+        </div>
+       
+      </div>
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+        © 2024 <a href="/" class="hover:underline">Prestige</a>. Todos los derechos reservados.
+      </span>
+    </div>
+  </div>
+</footer>

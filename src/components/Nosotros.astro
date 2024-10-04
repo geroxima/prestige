@@ -1,0 +1,68 @@
+---
+import GradualSpacingTitle from "./GradualSpacingTitle.astro";
+import { Image } from "astro:assets";
+import puenteSanRoque from "../../public/puente-san-roque.webp";
+---
+
+<section class="h-screen scroll-mt-24 px-8 z-10 mb-24" id="nosotros">
+  <GradualSpacingTitle text="Nosotros" />
+  <section>
+    <div class="py-8 mx-auto md:px-12 max-w-7xl relative">
+      <div class="text-center max-w-xl mx-auto">
+        <h1
+          class="text-4xl font-semibold tracking-tight text-base-900 lg:text-balance"
+        >
+          Respondiendo a las necesidades de nuestros clientes hace más de 10 años
+        </h1>
+        <div class="mt-6 flex justify-center text-left gap-x-5">
+          <div class="relative flex items-center gap-x-4">
+            <img
+              src="https://oxbowui.com/avatars/1.avif"
+              alt="#_"
+              class="size-12 rounded-full bg-base-50 object-cover"
+            />
+            <div class="text-sm leading-6">
+              <p class="font-semibold text-base-900">
+                <a href="#_">
+                  <span class="absolute inset-0"></span> Orlando Alvarez
+                </a>
+              </p>
+              <p class="text-xs text-base-500">Diseñador & CEO</p>
+            </div>
+          </div><div class="relative flex items-center gap-x-4">
+            <img
+              src="https://oxbowui.com/avatars/1.avif"
+              alt="#_"
+              class="size-12 rounded-full bg-base-50 object-cover"
+            />
+            <div class="text-sm leading-6">
+              <p class="font-semibold text-base-900">
+                <a href="#_">
+                  <span class="absolute inset-0"></span> Adán Alvarez
+                </a>
+              </p>
+              <p class="text-xs text-base-500">Desarrollador Web</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 lg:mt-24 flex items-start xl:flex-row flex-col">
+        <aside>
+            <p class="mb-3 text-xl text-gray-900 font-medium text-balance">
+              En Prestige, con <strong>más de 10 años</strong> de experiencia en el mercado en
+              <strong>Encarnación, Paraguay;</strong> hemos trabajado arduamente para ofrecer
+              productos y servicios de la más alta calidad. Nos importa la
+              excelencia en cada proyecto, asegurando que nuestras entregas no solo
+              cumplan con las expectativas, sino que las superen.
+            </p>
+            <p class="mb-3 text-xl text-gray-900 font-medium text-balance">
+              Nuestro compromiso es crear experiencias excepcionales para nuestros
+              clientes, combinando dedicación, atención al detalle e innovación,
+              siempre enfocados en satisfacer sus necesidades de manera integral.
+            </p>
+        </aside>
+        <Image src={puenteSanRoque} alt="Puente San Roque" class="xl:w-1/2 rounded-lg" />
+      </div>
+    </div>
+  </section>
+</section>

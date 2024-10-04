@@ -1,0 +1,40 @@
+---
+import { Image } from "astro:assets";
+import prestigeLogo from "../../public/prestige-logo.svg";
+import "../../src/styles/global.css";
+import AnimatedGridPattern from "../components/ui/animated-grid-pattern";
+import { cn } from "@/lib/utils";
+---
+
+<section class="relative h-screen">
+    <AnimatedGridPattern
+    client:load
+    numSquares={60}
+    maxOpacity={0.15}
+    duration={3}
+    repeatDelay={1}
+    className={cn(
+      "[mask-image:radial-gradient(800px_circle_at_center,white,transparent)]",
+      "absolute inset-0 h-full w-full skew-y-12 z-[-1]"
+    )}
+    />
+    <div class="relative mx-auto max-w-2xl py-32 px-4 z-10">
+    <section class="h-16 mb-8 justify-center flex xl:h-28">
+      <Image src={prestigeLogo} alt="Logo de prestige" />
+    </section>
+    <main class="text-center">
+      <h1
+        class="text-pretty text-4xl font-semibold tracking-tight bg-gradient-to-tr from-zinc-700 to-slate-900 bg-clip-text text-transparent sm:text-6xl"
+      >
+        Creatividad y tecnología al servicio de tu marca
+      </h1>
+      <p
+        class="mt-6 text-xl leading-7 text-gray-700 text-pretty tracking-tighter bg-slate-50 rounded-lg"
+      >
+        Desde diseño gráfico innovador hasta soluciones web personalizadas, en
+        Prestige ayudamos a que tu empresa destaque en cada plataforma,
+        convirtiendo ideas en experiencias visuales y digitales únicas.
+      </p>
+    </main>
+    </div>
+</section>
