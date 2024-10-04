@@ -1,8 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { IconCloud } from "@/components/ui/icon-cloud";
-import { Image } from "astro:assets";
-import prestigeLogo from "../../public/prestige-logo.svg";
 
 const slugs = [
   "typescript",
@@ -32,7 +30,7 @@ const slugs = [
     <div class="px-8 mx-auto md:px-12 lg:px-24 max-w-7xl relative">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
-          <Image src={prestigeLogo} alt="Logo de Prestige" class="h-16" />
+          <img src="../../public/prestige-logo.svg" alt="Prestige Logo" class="h-16"/>
 
           <h1
             class="text-4xl font-semibold tracking-tight text-base-900 lg:text-balance mt-4"
