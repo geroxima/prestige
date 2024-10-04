@@ -1,6 +1,7 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import HeaderHomeLink from "./HeaderHomeLink.astro";
+import HeaderContactLink from "./HeaderContactLink.astro";
 ---
 
 <div id="mobile-menu" class="lg:hidden hidden" role="dialog" aria-modal="true">
@@ -41,12 +42,8 @@ import HeaderHomeLink from "./HeaderHomeLink.astro";
           <HeaderLink href="/#nosotros" text="Nosotros" />
          
         </div>
-        <div class="py-6 flex">
-          <a
-            href="#"
-            class="text-white font-semibold w-full bg-blue-700 hover:bg-blue-800 rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2"
-            >Contáctanos</a
-          >
+        <div class="py-6">
+          <HeaderContactLink />
         </div>
       </div>
     </div>
